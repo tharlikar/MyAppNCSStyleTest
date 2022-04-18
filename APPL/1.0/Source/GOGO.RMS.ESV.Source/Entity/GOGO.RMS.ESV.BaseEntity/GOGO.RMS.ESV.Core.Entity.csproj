@@ -7,8 +7,8 @@
     <ProjectGuid>{387D150A-2588-453C-8796-C1F01F825383}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GOGO.RMS.ESV.BaseEntity</RootNamespace>
-    <AssemblyName>GOGO.RMS.ESV.BaseEntity</AssemblyName>
+    <RootNamespace>GOGO.RMS.ESV.Core.Entity</RootNamespace>
+    <AssemblyName>GOGO.RMS.ESV.Core.Entity</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseEntity.cs" />
+    <Compile Include="Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

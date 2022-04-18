@@ -70,9 +70,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Entity\GOGO.RMS.ESV.BaseEntity\GOGO.RMS.ESV.BaseEntity.csproj">
+    <ProjectReference Include="..\..\Entity\GOGO.RMS.ESV.BaseEntity\GOGO.RMS.ESV.Core.Entity.csproj">
       <Project>{387D150A-2588-453C-8796-C1F01F825383}</Project>
-      <Name>GOGO.RMS.ESV.BaseEntity</Name>
+      <Name>GOGO.RMS.ESV.Core.Entity</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -1,10 +1,6 @@
-﻿using GOGO.RMS.ESV.BaseEntity;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Data.Entity;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 namespace GOGO.RMS.ESV.DataAccess
 {
     public class DataAccessContext: DbContext

@@ -1,31 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace GOGO.RMS.ESV.BaseEntity
+namespace GOGO.RMS.ESV.Core.Entity
 {
-    public class BaseEntity
+    abstract public class BaseEntity
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [Key]
-        public Guid Id { get; set; }
-
-        public DateTime? Created { get; set; }
-
-        [StringLength(50)]
-        public String CreatedBy { get; set; }
-
-        public DateTime? LastUpdate { get; set; }
-
-        [StringLength(50)]
-        public String LastUpdatedBy { get; set; }
-
-        [StringLength(50)]
-        public String DatabaseLoginId { get; set; }
+        public virtual Guid Id { get; set; }
+        public virtual DateTime? Created { get; set; }
+        public virtual String CreatedBy { get; set; }
+        public virtual DateTime? LastUpdate { get; set; }
+        public virtual String LastUpdatedBy { get; set; }
+        public virtual String Owner { get; set; }
     }
 }
