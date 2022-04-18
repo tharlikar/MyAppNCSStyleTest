@@ -71,9 +71,14 @@
     <Compile Include="Migrations\201803250802133_AdjustColumnWidth1.Designer.cs">
       <DependentUpon>201803250802133_AdjustColumnWidth1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202204181937445_POCOAdded.cs" />
+    <Compile Include="Migrations\202204181937445_POCOAdded.designer.cs">
+      <DependentUpon>202204181937445_POCOAdded.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ProductRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -85,6 +90,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803250802133_AdjustColumnWidth1.resx">
       <DependentUpon>201803250802133_AdjustColumnWidth1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204181937445_POCOAdded.resx">
+      <DependentUpon>202204181937445_POCOAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

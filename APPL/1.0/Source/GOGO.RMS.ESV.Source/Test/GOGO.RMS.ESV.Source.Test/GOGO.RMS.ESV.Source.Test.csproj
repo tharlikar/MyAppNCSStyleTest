@@ -49,20 +49,17 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="GOGO.RMS.ESV.BaseBF">
-      <HintPath>U:\GOGO.RMS.ESV.BaseBF.dll</HintPath>
+    <Reference Include="GOGO.RMS.ESV.Core.Entity">
+      <HintPath>U:\GOGO.RMS.ESV.Core.Entity.dll</HintPath>
     </Reference>
-    <Reference Include="GOGO.RMS.ESV.BaseEntity">
-      <HintPath>U:\GOGO.RMS.ESV.BaseEntity.dll</HintPath>
+    <Reference Include="GOGO.RMS.ESV.Core.Interface">
+      <HintPath>U:\GOGO.RMS.ESV.Core.Interface.dll</HintPath>
     </Reference>
-    <Reference Include="GOGO.RMS.ESV.Product">
-      <HintPath>U:\GOGO.RMS.ESV.Product.dll</HintPath>
+    <Reference Include="GOGO.RMS.ESV.EF.Impl.Repository">
+      <HintPath>U:\GOGO.RMS.ESV.EF.Impl.Repository.dll</HintPath>
     </Reference>
-    <Reference Include="GOGO.RMS.ESV.ProductBF">
-      <HintPath>U:\GOGO.RMS.ESV.ProductBF.dll</HintPath>
-    </Reference>
-    <Reference Include="GOGO.RMS.ESV.ProductBFInterface">
-      <HintPath>U:\GOGO.RMS.ESV.ProductBFInterface.dll</HintPath>
+    <Reference Include="GOGO.RMS.ESV.Impl.BF">
+      <HintPath>U:\GOGO.RMS.ESV.Impl.BF.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\..\packages\MSTest.TestFramework.2.2.4-preview-20210331-02\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
@@ -73,14 +70,26 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
     <Compile Include="TestProductBF.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

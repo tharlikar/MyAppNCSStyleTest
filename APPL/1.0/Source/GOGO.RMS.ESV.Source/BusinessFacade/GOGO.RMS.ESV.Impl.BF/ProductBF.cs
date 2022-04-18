@@ -9,55 +9,60 @@ namespace GOGO.RMS.ESV.Impl.BF
     public class ProductBF : BaseBF, IProductBF
     {
         private readonly IUnitOfWork unitOfWork;
+        private readonly IProductRepository productRepository;
 
-        public ProductBF(IUnitOfWork unitOfWork)
+        public ProductBF(IUnitOfWork unitOfWork, IProductRepository productRepository)
         {
             this.unitOfWork = unitOfWork;
+            this.productRepository = productRepository;
         }
 
         public void Delete(Product entity)
         {
-            throw new NotImplementedException();
+            this.productRepository.Delete(entity);
         }
 
         public void DeleteById(Guid Id)
         {
-            throw new NotImplementedException();
+            this.productRepository.Delete(GetById(Id));
         }
 
         public void DeleteBySku(string SKU)
         {
-            throw new NotImplementedException();
+            this.productRepository.DeleteBySku(SKU);
         }
 
         public Product Get(Product entity)
         {
-            throw new NotImplementedException();
+            return this.productRepository.Get(entity.Id);
         }
 
         public IList<Product> GetAll()
         {
-            throw new NotImplementedException();
+            return this.productRepository.List();
         }
 
         public Product GetById(Guid Id)
         {
-            throw new NotImplementedException();
+            return this.productRepository.List(x => x.Id == Id).FirstOrDefault();
         }
 
         public IList<Product> GetByName(string Name)
         {
-            throw new NotImplementedException();
+            return this.productRepository.GetByName(Name);
         }
 
         public IList<Product> GetBySKU(string SKU)
         {
-            throw new NotImplementedException();
+            return this.productRepository.GetBySKU(SKU);
         }
-
         public void Save(Product entity)
         {
-            throw new NotImplementedException();
+            var product = this.productRepository.Get(entity.Id);
+            if (product != null)
+                this.productRepository.Update(entity);
+            else
+                this.productRepository.Insert(entity);
         }
     }
 }

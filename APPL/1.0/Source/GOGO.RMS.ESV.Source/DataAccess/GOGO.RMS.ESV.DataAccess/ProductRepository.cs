@@ -19,8 +19,12 @@ namespace GOGO.RMS.ESV.EF.Impl.Repository
 
         public void DeleteBySku(string SKU)
         {
-            GetBySKU(SKU).Select(x=> this.dataContext.Set<Product>().Remove(x));
-            this.dataContext.SaveChanges();
+            IList<Product> ps= GetBySKU(SKU);
+            foreach(var p in ps)
+            {
+                this.dataContext.Set<Product>().Remove(p);
+                this.dataContext.SaveChanges();
+            }
         }
 
         public IList<Product> GetByName(string Name)
