@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{69ED1A1E-F2F0-43F6-8DF8-4B45ED854CE5}</ProjectGuid>
+    <ProjectGuid>{B8FDD194-1DA6-4B0F-BAE0-202740D6C180}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GOGO.RMS.ESV.ProductBFInterface</RootNamespace>
-    <AssemblyName>GOGO.RMS.ESV.ProductBFInterface</AssemblyName>
+    <RootNamespace>GOGO.RMS.ESV.Impl.BF</RootNamespace>
+    <AssemblyName>GOGO.RMS.ESV.Impl.BF</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>SAK</SccProjectName>
@@ -34,8 +34,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GOGO.RMS.ESV.Product">
-      <HintPath>U:\GOGO.RMS.ESV.Product.dll</HintPath>
+    <Reference Include="GOGO.RMS.ESV.Core.Entity">
+      <HintPath>U:\GOGO.RMS.ESV.Core.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="GOGO.RMS.ESV.Core.Interface">
+      <HintPath>U:\GOGO.RMS.ESV.Core.Interface.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -47,7 +50,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IProductBF.cs" />
+    <Compile Include="BaseBF.cs" />
+    <Compile Include="ProductBF.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

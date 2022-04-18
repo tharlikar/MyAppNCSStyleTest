@@ -8,8 +8,8 @@
     <ProjectGuid>{576D183C-3713-4583-96C0-A92736B96885}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GOGO.RMS.ESV.DataAccess</RootNamespace>
-    <AssemblyName>GOGO.RMS.ESV.DataAccess</AssemblyName>
+    <RootNamespace>GOGO.RMS.ESV.EF.Impl.Repository</RootNamespace>
+    <AssemblyName>GOGO.RMS.ESV.EF.Impl.Repository</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>SAK</SccProjectName>
@@ -43,8 +43,12 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="GOGO.RMS.ESV.Product">
-      <HintPath>U:\GOGO.RMS.ESV.Product.dll</HintPath>
+    <Reference Include="GOGO.RMS.ESV.Core.Entity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>U:\GOGO.RMS.ESV.Core.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="GOGO.RMS.ESV.Core.Interface">
+      <HintPath>U:\GOGO.RMS.ESV.Core.Interface.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -57,6 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseRepository.cs" />
     <Compile Include="DataAccessContext.cs" />
     <Compile Include="Migrations\201803250758566_AdjustColumnWidth.cs" />
     <Compile Include="Migrations\201803250758566_AdjustColumnWidth.Designer.cs">
@@ -67,13 +72,8 @@
       <DependentUpon>201803250802133_AdjustColumnWidth1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="ProductRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Entity\GOGO.RMS.ESV.BaseEntity\GOGO.RMS.ESV.Core.Entity.csproj">
-      <Project>{387D150A-2588-453C-8796-C1F01F825383}</Project>
-      <Name>GOGO.RMS.ESV.Core.Entity</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

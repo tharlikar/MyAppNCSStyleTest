@@ -1,18 +1,19 @@
 namespace GOGO.RMS.ESV.DataAccess.Migrations
 {
+    using GOGO.RMS.ESV.EF.Impl.Repository;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<GOGO.RMS.ESV.DataAccess.DataAccessContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<DataAccessContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(GOGO.RMS.ESV.DataAccess.DataAccessContext context)
+        protected override void Seed(DataAccessContext context)
         {
             //  This method will be called after migrating to the latest version.
 

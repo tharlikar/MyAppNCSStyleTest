@@ -1,11 +1,12 @@
-﻿using System;
+﻿using GOGO.RMS.ESV.Core.Entity;
+using System;
 using System.Data.Entity;
 using System.Linq;
-namespace GOGO.RMS.ESV.DataAccess
+namespace GOGO.RMS.ESV.EF.Impl.Repository
 {
     public class DataAccessContext: DbContext
     {
-        public DbSet<GOGO.RMS.ESV.Product.Product> Products { get; set; }
+        public DbSet<Product> Products { get; set; }
         public DataAccessContext() : base()
         {
         }
@@ -18,10 +19,10 @@ namespace GOGO.RMS.ESV.DataAccess
 
             foreach (var entry in entries)
             {
-                var auditableEntity = entry.Entity as GOGO.RMS.ESV.BaseEntity.BaseEntity;
+                var auditableEntity = entry.Entity as AuditableEntity;
 
                 if (auditableEntity != null)
-                    auditableEntity.LastUpdate = now;
+                    auditableEntity.LastUpdated = now;
             }
 
             var entries2 = ChangeTracker.Entries()
@@ -29,11 +30,11 @@ namespace GOGO.RMS.ESV.DataAccess
 
             foreach (var entry in entries2)
             {
-                var auditableEntity = entry.Entity as GOGO.RMS.ESV.BaseEntity.BaseEntity;
+                var auditableEntity = entry.Entity as AuditableEntity;
 
                 if (auditableEntity != null)
                 {
-                    auditableEntity.LastUpdate = now;
+                    auditableEntity.LastUpdated = now;
                     auditableEntity.Created = now;
                 }
             }
