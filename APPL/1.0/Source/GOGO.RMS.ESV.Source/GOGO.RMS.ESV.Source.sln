@@ -1,0 +1,118 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GOGO.RMS.ESV.Product", "Entity\GOGO.RMS.ESV.Product\GOGO.RMS.ESV.Product\GOGO.RMS.ESV.Product.csproj", "{245FD6C5-A357-4B5B-830A-BB8C40CE1CCB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entity", "Entity", "{927B28E8-DC46-41C6-9363-F06576FEA36E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessComponent", "BusinessComponent", "{62DFAE98-9AFC-45A0-9FBF-66AE3081E6C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessFacade", "BusinessFacade", "{791AAA8C-E1FD-4EBF-BFD8-44268966B7E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interface", "Interface", "{9C71074D-B9C9-4D7A-B2DE-77DD2C59BF21}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", "{14B97FCE-D5F7-4C7A-B0F1-C2D219C9CB33}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Helper", "Helper", "{CCF619C5-13AB-43FA-90E3-54A0B062E2E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{F6176CA3-A582-4857-84E0-1EB98029EC36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GOGO.RMS.ESV.BaseBF", "BusinessFacade\GOGO.RMS.ESV.BaseBF\GOGO.RMS.ESV.BaseBF.csproj", "{B8FDD194-1DA6-4B0F-BAE0-202740D6C180}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GOGO.RMS.ESV.ProductBF", "BusinessFacade\GOGO.RMS.ESV.ProductBF\GOGO.RMS.ESV.ProductBF.csproj", "{D27B0310-8088-4D53-9B23-305F9A9D1BF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GOGO.RMS.ESV.DataAccess", "DataAccess\GOGO.RMS.ESV.DataAccess\GOGO.RMS.ESV.DataAccess.csproj", "{576D183C-3713-4583-96C0-A92736B96885}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GOGO.RMS.ESV.BaseEntity", "Entity\GOGO.RMS.ESV.BaseEntity\GOGO.RMS.ESV.BaseEntity.csproj", "{387D150A-2588-453C-8796-C1F01F825383}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GOGO.RMS.ESV.ProductBFInterface", "Interface\GOGO.RMS.ESV.ProductBFInterface\GOGO.RMS.ESV.ProductBFInterface.csproj", "{69ED1A1E-F2F0-43F6-8DF8-4B45ED854CE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GOGO.RMS.ESV.Source.Test", "Test\GOGO.RMS.ESV.Source.Test\GOGO.RMS.ESV.Source.Test.csproj", "{3961A50D-AFC6-4627-92B6-A5D0F1FB399F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{245FD6C5-A357-4B5B-830A-BB8C40CE1CCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{245FD6C5-A357-4B5B-830A-BB8C40CE1CCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{245FD6C5-A357-4B5B-830A-BB8C40CE1CCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{245FD6C5-A357-4B5B-830A-BB8C40CE1CCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8FDD194-1DA6-4B0F-BAE0-202740D6C180}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8FDD194-1DA6-4B0F-BAE0-202740D6C180}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8FDD194-1DA6-4B0F-BAE0-202740D6C180}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8FDD194-1DA6-4B0F-BAE0-202740D6C180}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D27B0310-8088-4D53-9B23-305F9A9D1BF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D27B0310-8088-4D53-9B23-305F9A9D1BF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D27B0310-8088-4D53-9B23-305F9A9D1BF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D27B0310-8088-4D53-9B23-305F9A9D1BF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{576D183C-3713-4583-96C0-A92736B96885}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{576D183C-3713-4583-96C0-A92736B96885}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{576D183C-3713-4583-96C0-A92736B96885}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{576D183C-3713-4583-96C0-A92736B96885}.Release|Any CPU.Build.0 = Release|Any CPU
+		{387D150A-2588-453C-8796-C1F01F825383}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{387D150A-2588-453C-8796-C1F01F825383}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{387D150A-2588-453C-8796-C1F01F825383}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{387D150A-2588-453C-8796-C1F01F825383}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69ED1A1E-F2F0-43F6-8DF8-4B45ED854CE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69ED1A1E-F2F0-43F6-8DF8-4B45ED854CE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69ED1A1E-F2F0-43F6-8DF8-4B45ED854CE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69ED1A1E-F2F0-43F6-8DF8-4B45ED854CE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3961A50D-AFC6-4627-92B6-A5D0F1FB399F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3961A50D-AFC6-4627-92B6-A5D0F1FB399F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3961A50D-AFC6-4627-92B6-A5D0F1FB399F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3961A50D-AFC6-4627-92B6-A5D0F1FB399F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{245FD6C5-A357-4B5B-830A-BB8C40CE1CCB} = {927B28E8-DC46-41C6-9363-F06576FEA36E}
+		{B8FDD194-1DA6-4B0F-BAE0-202740D6C180} = {791AAA8C-E1FD-4EBF-BFD8-44268966B7E4}
+		{D27B0310-8088-4D53-9B23-305F9A9D1BF4} = {791AAA8C-E1FD-4EBF-BFD8-44268966B7E4}
+		{576D183C-3713-4583-96C0-A92736B96885} = {14B97FCE-D5F7-4C7A-B0F1-C2D219C9CB33}
+		{387D150A-2588-453C-8796-C1F01F825383} = {927B28E8-DC46-41C6-9363-F06576FEA36E}
+		{69ED1A1E-F2F0-43F6-8DF8-4B45ED854CE5} = {9C71074D-B9C9-4D7A-B2DE-77DD2C59BF21}
+		{3961A50D-AFC6-4627-92B6-A5D0F1FB399F} = {F6176CA3-A582-4857-84E0-1EB98029EC36}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6E231F9B-BFFF-454F-9632-C68271E02395}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://minsoehanwin.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Entity\\GOGO.RMS.ESV.Product\\GOGO.RMS.ESV.Product\\GOGO.RMS.ESV.Product.csproj
+		SccProjectTopLevelParentUniqueName1 = GOGO.RMS.ESV.Source.sln
+		SccProjectName1 = Entity/GOGO.RMS.ESV.Product/GOGO.RMS.ESV.Product
+		SccLocalPath1 = Entity\\GOGO.RMS.ESV.Product\\GOGO.RMS.ESV.Product
+		SccProjectUniqueName2 = BusinessFacade\\GOGO.RMS.ESV.BaseBF\\GOGO.RMS.ESV.BaseBF.csproj
+		SccProjectTopLevelParentUniqueName2 = GOGO.RMS.ESV.Source.sln
+		SccProjectName2 = BusinessFacade/GOGO.RMS.ESV.BaseBF
+		SccLocalPath2 = BusinessFacade\\GOGO.RMS.ESV.BaseBF
+		SccProjectUniqueName3 = BusinessFacade\\GOGO.RMS.ESV.ProductBF\\GOGO.RMS.ESV.ProductBF.csproj
+		SccProjectTopLevelParentUniqueName3 = GOGO.RMS.ESV.Source.sln
+		SccProjectName3 = BusinessFacade/GOGO.RMS.ESV.ProductBF
+		SccLocalPath3 = BusinessFacade\\GOGO.RMS.ESV.ProductBF
+		SccProjectUniqueName4 = DataAccess\\GOGO.RMS.ESV.DataAccess\\GOGO.RMS.ESV.DataAccess.csproj
+		SccProjectTopLevelParentUniqueName4 = GOGO.RMS.ESV.Source.sln
+		SccProjectName4 = DataAccess/GOGO.RMS.ESV.DataAccess
+		SccLocalPath4 = DataAccess\\GOGO.RMS.ESV.DataAccess
+		SccProjectUniqueName5 = Entity\\GOGO.RMS.ESV.BaseEntity\\GOGO.RMS.ESV.BaseEntity.csproj
+		SccProjectTopLevelParentUniqueName5 = GOGO.RMS.ESV.Source.sln
+		SccProjectName5 = Entity/GOGO.RMS.ESV.BaseEntity
+		SccLocalPath5 = Entity\\GOGO.RMS.ESV.BaseEntity
+		SccProjectUniqueName6 = Interface\\GOGO.RMS.ESV.ProductBFInterface\\GOGO.RMS.ESV.ProductBFInterface.csproj
+		SccProjectTopLevelParentUniqueName6 = GOGO.RMS.ESV.Source.sln
+		SccProjectName6 = Interface/GOGO.RMS.ESV.ProductBFInterface
+		SccLocalPath6 = Interface\\GOGO.RMS.ESV.ProductBFInterface
+		SccProjectUniqueName7 = Test\\GOGO.RMS.ESV.Source.Test\\GOGO.RMS.ESV.Source.Test.csproj
+		SccProjectTopLevelParentUniqueName7 = GOGO.RMS.ESV.Source.sln
+		SccProjectName7 = Test/GOGO.RMS.ESV.Source.Test
+		SccLocalPath7 = Test\\GOGO.RMS.ESV.Source.Test
+	EndGlobalSection
+EndGlobal
